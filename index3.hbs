@@ -1,0 +1,18 @@
+<a href="/" >Home</a> |
+</section>
+<section class="get">
+    <h3>Get Vet Data</h3>
+    <a href="/get-vetdata">LOAD DATA</a>
+    <div>
+        {{# each units }}
+            <article class="unit">
+                <div>Tag: {{ this.tag1 }}</div>
+                <div>Reason: {{ this.reason }}</div>
+                <div>Vet Name: {{ this.vetname }}</div>
+                <div>Cost: {{ this.cost }}</div>
+                <div>Date: {{ this.date }}</div>
+                <div>ID: {{ this._id }}</div>
+            </article>
+        {{/each}}
+    </div>
+</section>

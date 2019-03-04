@@ -1,0 +1,16 @@
+<a href="/" >Home</a> |
+</section>
+<section class="get">
+    <h3>Get Supply Data</h3>
+    <a href="/get-supplydata">LOAD DATA</a>
+    <div>
+        {{# each objects }}
+            <article class="object">
+                <div>Supplies: {{ this.sup }}</div>
+                <div>Price: {{ this.price2 }}</div>
+                <div>Date: {{ this.date2 }}</div>
+                <div>ID: {{ this._id }}</div>
+            </article>
+        {{/each}}
+    </div>
+</section>

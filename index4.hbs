@@ -1,0 +1,18 @@
+<a href="/" >Home</a> |
+</section>
+<section class="get">
+    <h3>Get Feed Data</h3>
+    <a href="/get-feeddata">LOAD DATA</a>
+    <div>
+        {{# each amounts }}
+            <article class="amount">
+                <div>Quantity: {{ this.qty }}</div>
+                <div>Price: {{ this.price }}</div>
+                <div>Supplier: {{ this.supplier }}</div>
+                <div>Type: {{ this.type }}</div>
+                <div>Date: {{ this.date1 }}</div>
+                <div>ID: {{ this._id }}</div>
+            </article>
+        {{/each}}
+    </div>
+</section>
